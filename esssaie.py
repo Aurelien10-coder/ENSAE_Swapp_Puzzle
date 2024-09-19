@@ -2,22 +2,13 @@ from grid import Grid
 from solver import Solver 
 from graph import Graph
 
-
-#Réponse à la question 3
-print("question 3")
 grille=Solver(3,2,[])
 grille.swap_seq([((0,0),(1,0)),((1,0),(2,0)),((1,1),(2,1)),((2,1),(2,0))])
 print(grille.get_solution())
 print("Nombre de swap avec la solution naive : ",len(grille.get_solution()),"\n")
 
 
-#Réponse à la question 4
-print("question 4")
-graph = Graph.graph_from_file("input/graph1.in")
-print("test fonction bfs : ",graph.bfs(7,14),"\n")
 
-#Réponse à la question 7
-print("question 7")
 
 grille=Solver(3,2,[])
 grille.swap_seq([((0,0),(1,0)),((1,0),(2,0)),((1,1),(2,1)),((2,1),(2,0))])
@@ -26,12 +17,7 @@ solution=grille.resolution()
 print(solution)
 print("Nombre de swap avec bfs : ",len(solution),"\n")
 
-"""
-Nous observons que au lieu d'avoir 14 swaps comme dans la version naive nous en avons seuelement 4
-"""
 
-#Réponse à la question 8
-print("question 8")
 grille=Solver(3,2,[])
 grille.swap_seq([((0,0),(1,0)),((1,0),(2,0)),((1,1),(2,1)),((2,1),(2,0))])
 
@@ -43,12 +29,6 @@ grille.swap_seq([((0,0),(1,0)),((1,0),(2,0)),((1,1),(2,1)),((2,1),(2,0))])
 
 print(grille.resolution_2(),"\n")
 
-"""
-Nous observons que au lieu d'avoir 720 élement dans le dictionnaire nous en avons que 117
-"""
-
-#Réponse à la question 9
-print("question 9")
 
 grille=Solver(3,3,[])
 grille.swap_seq([((0,0),(1,0)),((1,0),(2,0)),((1,1),(2,1)),((2,1),(2,0))])
@@ -58,8 +38,8 @@ print(grille.bfs_2(),"\n")
 
 
 
-m=5
-n=5
+m=3
+n=3
 
 import numpy as np
 nombres = np.arange(1, n*m+1)
